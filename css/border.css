@@ -1,0 +1,24 @@
+.tv-border {
+    position: relative;
+    padding-bottom: 30px;
+    /* height: 550px; */
+    /* background: white; */
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+    color: black;
+    box-shadow: 10px 10px rgba(0, 0, 0, .15);
+    transition: all .4s ease;
+}
+
+.tv-border:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+    box-shadow: 10px 10px rgba(0, 0, 0, .25);
+}
+
+.botton-shadow-border {
+    font-family: var(--font-decorative);
+    font-size: 3rem;
+    color: var(--text-dark);
+    line-height: .9;
+    padding-bottom: 30px;
+    box-shadow: 0px 10px rgba(0, 0, 0, .15);
+}
