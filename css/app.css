@@ -151,6 +151,7 @@ body {
 .hero .content .title span.groom-name,
 .hero .content .title span.bride-name {
     font-size: 6rem;
+    /* font-size: 1.125rem; */
     color: var(--text-dark);
     line-height: .9;
     /* transform: rotate(-9deg) */
@@ -165,7 +166,7 @@ body {
 } */
 
 .hero .image {
-    --width: 30%;
+    --width: 300px;
     max-width: var(--width);
     margin: 5rem auto 0;
     position: relative;
