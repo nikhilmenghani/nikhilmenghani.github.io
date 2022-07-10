@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang=&quot;en&quot; >
+
+<head>
+
+<link type="stylesheet" href="css/test.css">
+  
+  
+<style>
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #181818;
+}
+
+#pen-title,
+#pen-description {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  z-index: 0;
+  color: #484848;
+}
+
+#pen-title {
+  transform: translate(-50%, -125%);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#pen-description {
+  transform: translate(-50%, 125%);
+  font-size: 1.125rem;
+}
+
+.card-checkbox {
+  display: none;
+}
+
+.card {
+  box-sizing: border-box;
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  width: 640px;
+  height: 428.8px;
+  margin-left: -320px;
+  padding: 1rem;
+  transform: rotate(-2deg);
+  z-index: 0;
+  background-color: #ddd;
+  color: #181818;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  transition: all 0.75s;
+}
+
+.card-checkbox:first-of-type:checked ~ .card-checkbox:nth-of-type(2) + .card, .card-checkbox:first-of-type + .card {
+  transform: rotate(2deg);
+  z-index: 2;
+  background-color: #fff;
+}
+
+.card-checkbox:nth-of-type(2):checked ~ .card-checkbox:nth-of-type(3) + .card, .card-checkbox:first-of-type:checked ~ .card-checkbox:nth-of-type(3) + .card, .card-checkbox:nth-of-type(2) + .card {
+  z-index: 1;
+  transform: rotate(0);
+  background-color: #eee;
+}
+
+.card-checkbox:checked + .card {
+  margin-top: -240px;
+  transform: rotate(0);
+  top: 50%;
+  background-color: #fff;
+}
+
+#nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  font-size: 0.95rem;
+  color: #686868;
+}
+#nav li:not(.lowercase) {
+  text-transform: uppercase;
+}
+#nav label {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+#nav label:hover {
+  color: #f8f8f8;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage(&quot;resize&quot;, &quot;*&quot;);
+  }
+</script>
+
+
+</head>
+
+<body translate=&quot;no&quot; >
+  <ul id=&quot;nav&quot;>
+	<li class=&quot;lowercase&quot;><label for=&quot;put-cards-down&quot;>(Put cards down)</label></li>
+	<li><label for=&quot;toggle-card-1&quot;>First card</label></li>
+	<li><label for=&quot;toggle-card-2&quot;>Second card</label></li>
+	<li><label for=&quot;toggle-card-3&quot;>Third card</label></li>
+	<li><label for=&quot;toggle-card-4&quot;>Fourth card</label></li>
+</ul>
+
+
+<h1 id=&quot;pen-title&quot;>Pure CSS Card Deck</h1>
+<div id=&quot;pen-description&quot;>(Requires enough window height)</div>
+
+
+<input type=&quot;radio&quot; name=&quot;cards&quot; class=&quot;card-checkbox&quot; id=&quot;toggle-card-1&quot;>
+
+<div class=&quot;card&quot;>
+	<h2>First card</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nihil dolore, cumque molestiae doloribus necessitatibus! Nisi perferendis ipsam, harum itaque.</p>
+</div>
+
+
+<input type=&quot;radio&quot; name=&quot;cards&quot; class=&quot;card-checkbox&quot; id=&quot;toggle-card-2&quot;>
+
+<div class=&quot;card&quot;>
+	<h2>Second card</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nihil dolore, cumque molestiae doloribus necessitatibus! Nisi perferendis ipsam, harum itaque.</p>
+</div>
+
+
+<input type=&quot;radio&quot; name=&quot;cards&quot; class=&quot;card-checkbox&quot; id=&quot;toggle-card-3&quot;>
+
+<div class=&quot;card&quot;>
+	<h2>Third card</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nihil dolore, cumque molestiae doloribus necessitatibus! Nisi perferendis ipsam, harum itaque.</p>
+</div>
+
+
+<input type=&quot;radio&quot; name=&quot;cards&quot; class=&quot;card-checkbox&quot; id=&quot;toggle-card-4&quot;>
+
+<div class=&quot;card&quot;>
+	<h2>Fourth card</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nihil dolore, cumque molestiae doloribus necessitatibus! Nisi perferendis ipsam, harum itaque.</p>
+</div>
+
+
+<input type=&quot;radio&quot; name=&quot;cards&quot; class=&quot;card-checkbox&quot; id=&quot;put-cards-down&quot;>
+  
+  
+  
+  
+
+</body>
+
+</html>
